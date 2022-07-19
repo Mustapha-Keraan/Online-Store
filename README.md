@@ -3,8 +3,8 @@ Description: This project was created to provide information about the business,
 
 ## Table of Contents
 1 Installation
-2 Usage
-3 Credits
+1 Usage
+1 Credits
 
 ## Getting Started
 
