@@ -2,9 +2,9 @@
 Description: This project was created to provide information about the business, to allow for clients to contact the business through the site, and to offer the available products and services online.
 
 ## Table of Contents
-1 Installation
-1 Usage
-1 Credits
+1. Installation
+2. Usage
+3. Credits
 
 ## Getting Started
 
