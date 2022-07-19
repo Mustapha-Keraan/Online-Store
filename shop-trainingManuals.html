@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <link href="./css/storeCSS.css" rel="stylesheet" type="text/css">
+      <!--Link stylesheet-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="myStylesbootstrap.css">
+      <!--Link bootstrap-->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+      <!--link font style^^^^^-->
+      <link href="./css/myStyles.css" rel="stylesheet" type="text/css">
+      <!--Link css stylesheet^^^^^-->
+      <!--Include jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+      <!-- Use script.js external Javascript file -->
+      <script src="scripts/script.js"></script>
+      
+        <title>Training Manuals</title>
+        <!--Set page title-->
+    
+    </head>
+
+<!-- 
+start of body
+=============
+>>>>>>>>>>>>>
+-->
+<body>
+
+  <!-- Header background container | header & navbar -->
+  <div class="header-background"><!--------------------------------------------------------------------------------->
+    <!-- Header | logo, text & cart-->
+    <div id="head" class="header row align-items-center"><!------------------------------------------>
+        <div class="col-0.5"><!--------------->
+            <img class="logo" src="./images/logo.png" alt="company-logo" height="400" width="auto"/>
+        </div> <!----------------------------->
+        <div class="col-4 header-text"><!----->
+            |  QuintEssential
+        </div><!------------------------------>
+
+        <!-- Navbar -->
+        <nav class="col-5 navigation">
+            <ul class="listLinks">
+                <li><a class="current-page" href="">Store</a></li>
+                <li><a href="HomePage.html">Home</a></li>
+                <li class="spacer">|</li>
+                <li><a href="Catalogue.html">Store</a></li>
+                <li class="spacer">|</li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li class="spacer">|</li>
+                <li><a href="shoppingCart.html">Cart</a></li>
+            </ul>
+        </nav> 
+
+        <!-- Shopping cart | icon | link | text --->
+        <div class="col-1 cart cartIconDiv"> <!---------------------------------------->
+            <a href="shoppingCart.html" class="CartIconLink">
+                <img class="cart-img" src="./images/cartIcon.png" alt="shopping cart">
+            </a>
+            <div class="cart-text"><!--------------------------------------->
+                0
+            </div> <!------------------------------------------------------->
+
+        </div><!-- End of Div | <div class="col-1 cart cartIconDiv"> ----------------->
+    </div><!------------------------------------------------------------------------------------------>
+</div><!-- End of Div | <div id="head" class="header row align-items-center"> ----------------------------------->
+
+  <div class="container">
+    <!-- Breadcrumbs -->
+    <div class="row"><!-------------------------->
+        <ul class="breadcrumb-list">
+          <li><a href="HomePage.html">Home</a></li>
+          <li>></li>
+          <li><a href="Catalogue.html">Store</a></li>
+          <li>></li>
+          <li class="current-page">Training Manuals</li>
+        </ul>   
+    </div> <!------------------------------------>
+  </div>
+
+<div id="content-wrapper">
+
+  <div class="column">
+    <img id="featured" src="./images/trainingManualsShop/trainingManual1.png">
+
+    <div id="slide-wrapper">
+      <img id="slideLeft" class="arrow" src="./images/arrowLeft.png">
+
+      <div id="slider"> <!-- div containing our sliding images -->
+        <img class="thumbnail active" src="./images/trainingManualsShop/trainingManual1.png">
+        <img class="thumbnail" src="./images/trainingManualsShop/trainingManual2.png">
+        <img class="thumbnail" src="./images/trainingManualsShop/trainingManual3.jpg">
+        <img class="thumbnail" src="./images/trainingManualsShop/trainingManual4.jpeg">
+        <img class="thumbnail" src="./images/trainingManualsShop/trainingManual5.jpeg">
+      </div>
+
+      <img id="slideRight" class="arrow" src="./images/arrowRight.png">
+    </div>
+  </div>
+
+  <div class="column">
+    <h1 class="selectedItem">Training Manuals</h1>
+    <hr>
+    <h3 class="selectedPrice">R1500.00</h3>
+
+    <p>Setting up training manuals can be a tedious task. Why not trust our industry-proven training material.</p>
+
+    <select>
+      <option>Select training manual</option>
+      <option>Promoting Inclusivity</option>
+      <option>Gender Transformation</option>
+      <option>Management Strategies</option>
+      <option>Workplace Respect</option>
+    </select>
+
+    <a href="" class="btn btn-outline-primary trainingProduct">Add to Cart</a>
+
+    <div id="cart"></div>
+  </div>
+
+</div>
+  <!-- below script will change the image on hover -->
+  <script type="text/javascript">
+    let thumbnails = document.getElementsByClassName('thumbnail')
+
+    let activeImages = document.getElementsByClassName('active')
+
+    for (var i=0; i < thumbnails.length; i++) {
+
+      thumbnails[i].addEventListener('mouseover', function() {
+        console.log(activeImages)
+        if (activeImages.length > 0) {
+          activeImages[0].classList.remove('active')
+        }
+
+        this.classList.add('active')
+        document.getElementById('featured').src = this.src
+      })
+    }
+
+    let buttonRight = document.getElementById('slideRight');
+    let buttonLeft = document.getElementById('slideLeft');
+
+    buttonLeft.addEventListener('click', function() {
+      document.getElementById('slider').scrollLeft -= 180
+    })
+
+    buttonRight.addEventListener('click', function() {
+      document.getElementById('slider').scrollLeft += 180
+    })
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)file:///Users/mustaphakeraan/Desktop/html/Task15/Capstone%20Project%20II/shop-trainingManuals.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="./Training Manuals_files/storeCSS.css" rel="stylesheet" type="text/css">
+        <!--Link stylesheet-->
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- set to reponsive images-->
+    
+        <link rel="stylesheet" href="./Training Manuals_files/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="file:///Users/mustaphakeraan/Desktop/html/Task15/Capstone%20Project%20II/myStylesbootstrap.css">
+        <!--Link bootstrap-->
+        <link href="./Training Manuals_files/css2" rel="stylesheet">
+        <!--link font style^^^^^-->
+        <link href="./Training Manuals_files/myStyles.css" rel="stylesheet" type="text/css">
+        <!--Link css stylesheet^^^^^-->
+
+        <!--Include jQuery -->
+        <script src="./Training Manuals_files/jquery.min.js"> </script>
+        <!-- Use script.js external Javascript file -->
+        <script src="./Training Manuals_files/script.js"></script>
+    
+        <title>Training Manuals</title>
+        <!--Set page title-->
+    
+    </head>
+
+<!-- 
+start of body
+=============
+>>>>>>>>>>>>>
+-->
+<body>
+
+  <!-- Header background container | header & navbar -->
+  <div class="header-background"><!--------------------------------------------------------------------------------->
+    <!-- Header | logo, text & cart-->
+    <div id="head" class="header row align-items-center"><!------------------------------------------>
+        <div class="col-0.5"><!--------------->
+            <img class="logo" src="./Training Manuals_files/logo.png" alt="company-logo" height="400" width="auto">
+        </div> <!----------------------------->
+        <div class="col-4 header-text"><!----->
+            |  QuintEssential
+        </div><!------------------------------>
+
+        <!-- Navbar -->
+        <nav class="col-5 navigation">
+            <ul class="listLinks">
+                <li><a class="current-page" href="file:///Users/mustaphakeraan/Desktop/html/Task15/Capstone%20Project%20II/shop-trainingManuals.html">Home</a></li>
+                <li><a href="file:///Users/mustaphakeraan/Desktop/html/Task15/Capstone%20Project%20II/HomePage.html">Home</a></li>
+                <li class="spacer">|</li>
+                <li><a href="file:///Users/mustaphakeraan/Desktop/html/Task15/Capstone%20Project%20II/Catalogue.html">Store</a></li>
+                <li class="spacer">|</li>
+                <li><a href="file:///Users/mustaphakeraan/Desktop/html/Task15/Capstone%20Project%20II/Contact.html">Contact</a></li>
+                <li class="spacer">|</li>
+                <li><a href="file:///Users/mustaphakeraan/Desktop/html/Task15/Capstone%20Project%20II/shoppingCart.html">Cart</a></li>
+            </ul>
+        </nav> 
+
+        <!-- Shopping cart | icon | link | text --->
+        <div class="col-1 cart cartIconDiv"> <!---------------------------------------->
+            <a href="file:///Users/mustaphakeraan/Desktop/html/Task15/Capstone%20Project%20II/shoppingCart.html" class="CartIconLink">
+                <img class="cart-img" src="./Training Manuals_files/cartIcon.png" alt="shopping cart">
+            </a>
+            <div class="cart-text">14</div> <!------------------------------------------------------->
+
+        </div><!-- End of Div | <div class="col-1 cart cartIconDiv"> ----------------->
+    </div><!------------------------------------------------------------------------------------------>
+</div><!-- End of Div | <div id="head" class="header row align-items-center"> ----------------------------------->
+
+  <div class="container">
+    <!-- Breadcrumbs -->
+    <div class="row"><!-------------------------->
+        <ul class="breadcrumb-list">
+          <li><a href="file:///Users/mustaphakeraan/Desktop/html/Task15/Capstone%20Project%20II/HomePage.html">Home</a></li>
+          <li>&gt;</li>
+          <li><a href="file:///Users/mustaphakeraan/Desktop/html/Task15/Capstone%20Project%20II/Catalogue.html">Store</a></li>
+          <li>&gt;</li>
+          <li class="current-page">Training Manuals</li>
+        </ul>   
+    </div> <!------------------------------------>
+  </div>
+
+<div id="content-wrapper">
+
+  <div class="column">
+    <img id="featured" src="./Training Manuals_files/trainingManual2.png">
+
+    <div id="slide-wrapper">
+      <img id="slideLeft" class="arrow" src="./Training Manuals_files/arrowLeft.png">
+
+      <div id="slider"> <!-- div containing our sliding images -->
+        <img class="thumbnail" src="./Training Manuals_files/trainingManual1.png">
+        <img class="thumbnail active" src="./Training Manuals_files/trainingManual2.png">
+        <img class="thumbnail" src="./Training Manuals_files/trainingManual3.jpg">
+        <img class="thumbnail" src="./Training Manuals_files/trainingManual4.jpeg">
+        <img class="thumbnail" src="./Training Manuals_files/trainingManual5.jpeg">
+      </div>
+
+      <img id="slideRight" class="arrow" src="./Training Manuals_files/arrowRight.png">
+    </div>
+  </div>
+
+  <div class="column">
+    <h1 class="selectedItem">Training Manuals</h1>
+    <hr>
+    <h3 class="selectedPrice">R1500.00</h3>
+
+    <p>Setting up training manuals can be a tedious task. Why not trust our industry-proven training material.</p>
+
+    <select>
+      <option>Select training manual</option>
+      <option>Promoting Inclusivity</option>
+      <option>Gender Transformation</option>
+      <option>Management Strategies</option>
+      <option>Workplace Respect</option>
+    </select>
+
+
+    <a href="file:///Users/mustaphakeraan/Desktop/html/Task15/Capstone%20Project%20II/shop-trainingManuals.html" class="btn btn-outline-primary trainingProduct">Add to Cart</a>
+
+    <div id="cart"></div>
+  </div>
+
+</div>
+  <!-- below script will change the image on hover -->
+  <script type="text/javascript">
+    let thumbnails = document.getElementsByClassName('thumbnail')
+
+    let activeImages = document.getElementsByClassName('active')
+
+    for (var i=0; i < thumbnails.length; i++) {
+
+      thumbnails[i].addEventListener('mouseover', function() {
+        console.log(activeImages)
+        if (activeImages.length > 0) {
+          activeImages[0].classList.remove('active')
+        }
+
+        this.classList.add('active')
+        document.getElementById('featured').src = this.src
+      })
+    }
+
+    let buttonRight = document.getElementById('slideRight');
+    let buttonLeft = document.getElementById('slideLeft');
+
+    buttonLeft.addEventListener('click', function() {
+      document.getElementById('slider').scrollLeft -= 180
+    })
+
+    buttonRight.addEventListener('click', function() {
+      document.getElementById('slider').scrollLeft += 180
+    })
+  </script>
+    
+
+</body></html>

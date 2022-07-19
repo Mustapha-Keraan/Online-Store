@@ -1,0 +1,374 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #765181;
+}
+
+/* Start | header & logo ------------- */
+.header-background {
+    background-color: #958383;
+    padding: 0;
+    margin-bottom: 0;
+    border-color: #765181;
+    border-width: 20px;
+    border-bottom-style: outset;
+}
+.header {
+    margin: 50px;
+    width: 100%;
+    background-color: #958383;
+    height: 100px;
+}
+.header-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 10px;
+    height: 100%;
+    font-size: 40px;
+    color: #3c0547;
+    text-align: left;
+}
+/* End | header & logo --------------- */
+
+
+/* Start | logo styling --------------------- */
+.logo {
+    height:85px;
+    margin: 0px 5px 0px 5px;
+}
+/* End | logo styling ----------------------  */
+
+
+/* Start | Navbar-------------------------------------- */
+.navigation ul {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0px;
+}
+.navigation li {
+    display: inline;
+    margin: 5px;
+    padding: 0px;
+}
+nav {
+    margin-left: auto;
+}
+nav a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #4c4c4e;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: #b10103;
+}
+nav a.current-page {
+    color: #b10103;
+    font-weight: normal;
+    text-decoration: underline;
+}
+.spacer {
+    color: #b10103;
+}
+/* End | Navbar --------------------------------------- */
+
+
+
+
+/* Start | cart item ---------------------------------------- */
+/* cart | styling for icon */
+.cartIconDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+/* cart | styling for image */
+.cart-img {
+    width: 25px;
+}
+
+/* cart total | styling for text */
+.cart-text {
+    font-size: 14px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25px;
+    height: 25px;
+
+    margin-left: 5px;
+    border: 1px black solid;
+    border-radius: 50%;
+    background-color: #b10103;
+}
+/* END | cart item ------------------------------------------ */
+
+/* START | Breadcrumb ------------------------------------------------ */
+.breadcrumb-list {
+    list-style: none;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.breadcrumb-list li {
+    display: inline;
+}
+
+.breadcrumb-list a {
+    color: #b10103;
+    text-decoration: underline;
+}
+
+.breadcrumb-list a:hover {
+    color: #b10103;
+    text-decoration: none;
+}
+
+.breadcrumb-list .current-page {
+    color: black;
+    text-decoration: none;
+}
+
+.breadcrumb-list .current-page:hover{
+    color: black;
+    text-decoration: none;
+}
+/* END | Breadcrumb -------------------------------------------------- */
+
+/*START | region selection dropdown*/
+div#regionNav{ 
+    position: relative;
+} 
+
+div#regionNav a{
+    padding: 5px 15px 5px; 
+}
+
+.dropdown-toggle{ 
+    padding: 0; 
+    background: #958383; }
+
+ul.dropdown { 
+    display: none; 
+    position: absolute; 
+    top: 100%;
+    margin-top: 5px; 
+    padding: 5px 5px 0 0; 
+    background: #958383; 
+}
+
+ul.dropdown li { list-style-type: none; }
+ul.dropdown li a { 
+    text-decoration: none; 
+    padding: 0em 1em; 
+    display: block; }
+/*END | region selection dropdown*/
+
+/* Styling */
+.container {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    margin: 15px;
+    padding-bottom: 10px;
+}
+
+.introBackColor {
+    background-color:#825c8d;
+}
+
+.home-womanCorporate {
+    max-width: 200%;
+    max-height: 200%;
+    display: block;
+}
+
+footer {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff;
+    padding: 50px;
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+h2.price {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Styling for product price */
+.priceAndButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.form-check {
+    margin-bottom: 2px;
+}
+
+.fantasy-font {
+    font-family: fantasy, serif;
+}
+
+/* Styling of Cart contents on shopping cart page. */
+.cartPage {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.cartItem {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 5px 0px 5px 0px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #b3b3b3;
+}
+
+.cartContents {
+    display: flex;
+    flex-direction: column;
+    flex: 7;
+}
+
+.cartContents img {
+    width: 150px;
+}
+
+.itemPricePara {
+    font-weight: bold;
+    margin-left: auto;
+
+}
+
+.cartSummary {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin: 5px 0px 5px 10px;
+    padding: 15px;
+    height: auto;
+
+    background-color: white;
+    border: 1px solid #b3b3b3;
+}
+
+/* Confirm order button */
+.confirmOrder {
+    margin-top: auto;
+}
+
+.about-animate {
+    background-color: #f4f4f4;
+}
+
+/* Styling for catalogue cards" */
+.card {
+    border-radius: 10px;
+    width: 20rem;
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0px 0px;
+    width: 15rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: auto;
+}
+
+.card-img-top:hover {
+    opacity: 50%;
+}
+
+.card:hover {
+    border: 1px solid #b8b8bd;
+
+}
+
+.card-body {
+    border-radius: 1px;
+    background-color: #b3b3b3;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3c0547;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+a {
+    color: #b10103;
+}
+
+
+.contact-image-div {
+    position: relative;
+}
+
+.contact-img-text {
+    position: absolute;
+    top: 71.5%;
+    left: 71.5%;
+
+    background-color: #e5e7eb;
+    font-size: 25px;
+    font-weight: bold;
+
+    padding: 2px;
+}
+
+.contact-img-text:hover {
+    color: red;
+}
+
+/* more buttton styling on home page */
+#showMoreInfo{
+    background-color: #b10103;
+    display: flex;
+}
+
+/* Footer styling */
+footer {
+    color: black;
+    text-align: center;
+}
+
+.footer-div {
+    width: 95%;
+    margin: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #958383;
+}
+
+

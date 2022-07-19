@@ -1,0 +1,591 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #765181;
+}
+
+/* Start | header & logo ------------- */
+.header-background {
+    background-color: #958383;
+    padding: 0;
+    margin-bottom: 0;
+    border-color: #765181;
+    border-width: 20px;
+    border-bottom-style: outset;
+}
+.header {
+    margin: 50px;
+    width: 100%;
+    background-color: #958383;
+    height: 100px;
+}
+.header-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 10px;
+    height: 100%;
+    font-size: 40px;
+    color: #3c0547;
+    text-align: left;
+}
+/* End | header & logo --------------- */
+
+
+/* Start | logo styling --------------------- */
+.logo {
+    height:85px;
+    margin: 0px 5px 0px 5px;
+}
+/* End | logo styling ----------------------  */
+
+
+/* Start | Navbar-------------------------------------- */
+.navigation ul {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0px;
+}
+.navigation li {
+    display: inline;
+    margin: 5px;
+    padding: 0px;
+}
+nav {
+    margin-left: auto;
+}
+nav a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #4c4c4e;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: #b10103;
+}
+nav a.current-page {
+    color: #b10103;
+    font-weight: normal;
+    text-decoration: underline;
+}
+.spacer {
+    color: #b10103;
+}
+/* End | Navbar --------------------------------------- */
+
+
+
+
+/* Start | cart item ---------------------------------------- */
+/* cart | styling for icon */
+.cartIconDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+/* cart | styling for image */
+.cart-img {
+    width: 25px;
+}
+
+/* cart total | styling for text */
+.cart-text {
+    font-size: 14px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25px;
+    height: 25px;
+
+    margin-left: 5px;
+    border: 1px black solid;
+    border-radius: 50%;
+    background-color: #b10103;
+}
+/* END | cart item ------------------------------------------ */
+
+/* START | Breadcrumb ------------------------------------------------ */
+/* Breadcrumb styling on all pages */
+.breadcrumb-list {
+    list-style: none;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.breadcrumb-list li {
+    display: inline;
+}
+
+.breadcrumb-list a {
+    color: #b10103;
+    text-decoration: underline;
+}
+
+.breadcrumb-list a:hover {
+    color: #b10103;
+    text-decoration: none;
+}
+
+.breadcrumb-list .current-page {
+    color: black;
+    text-decoration: none;
+}
+
+.breadcrumb-list .current-page:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* END | Breadcrumb -------------------------------------------------- */
+
+
+
+/* Styling of miscellaneous elements */
+.container {
+    width: 100%;
+}
+
+* {
+    /* elements are auto-styled */
+    box-sizing: border-box;
+}
+
+.row {
+    margin: 15px;
+    padding-bottom: 10px;
+}
+
+.introBackColor {
+    background-color:#825c8d;
+}
+
+.home-womanCorporate {
+    max-width: 200%;
+    max-height: 200%;
+    display: block;
+}
+
+
+footer {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff;
+    padding: 50px;
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+h2.price {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Styling for where product price appears next to "Add to Cart" button on product details pages. Aligns them both
+neatly. */
+.priceAndButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.form-check {
+    margin-bottom: 2px;
+}
+
+.fantasy-font {
+    font-family: fantasy, serif;
+}
+
+
+/* Call to action on home page to "Visit our product catalogue". Animation when user hovers over this is done with
+jQuery */
+.call-to-action {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #e5e7eb;
+    color: #0b79bf;
+    border: 1px solid #b8b8bd;
+    border-radius: 8px;
+}
+
+.call-to-action:hover {
+    background-color: #0b79bf;
+    border: 1px solid #4c4c4e;
+    color: #e5e7eb;
+    text-decoration: none;
+
+}
+
+/* Styling of Cart contents on shopping cart page. */
+.cartPage {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.cartItem {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 5px 0px 5px 0px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #b3b3b3;
+}
+
+.cartContents {
+    display: flex;
+    flex-direction: column;
+    flex: 7;
+}
+
+.cartContents img {
+    width: 150px;
+}
+
+.itemPricePara {
+    font-weight: bold;
+    margin-left: auto;
+
+}
+
+.cartSummary {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin: 5px 0px 5px 10px;
+    padding: 15px;
+    height: auto;
+
+    background-color: white;
+    border: 1px solid #b3b3b3;
+}
+
+/* Confirm order button */
+.confirmOrder {
+    margin-top: auto;
+
+}
+
+.about-animate {
+    background-color: #f4f4f4;
+
+}
+
+/* Style of testimonial block on About page */
+.testimonial {
+    font-style: italic;
+    font-size: 16px;
+    background-color: #e5e7eb;
+    padding: 20px;
+
+}
+
+/* Styling to of customer comment block at bottom of Home page */
+.home-block {
+
+    color: black;
+    font-style: italic;
+    font-size: 16px;
+    padding: 30px;
+    text-align: center;
+
+    background-color: #a0bcf0;
+}
+
+/* Styling for product catalogue page "Cards" - one for each product */
+.card {
+    border-radius: 10px;
+    width: 20rem;
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0px 0px;
+    width: 15rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: auto;
+}
+
+.card-img-top:hover {
+    opacity: 50%;
+}
+
+.card:hover {
+    border: 1px solid #b8b8bd;
+
+}
+
+.card-body {
+    border-radius: 1px;
+    background-color: #b3b3b3;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3c0547;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+a {
+    color: #b10103;
+}
+/* Card styling ends ----------------------------------------- */
+
+.contact-image-div {
+    position: relative;
+}
+
+.contact-img-text {
+    position: absolute;
+    top: 71.5%;
+    left: 71.5%;
+
+    background-color: #e5e7eb;
+    font-size: 25px;
+    font-weight: bold;
+
+    padding: 2px;
+}
+
+.contact-img-text:hover {
+    color: red;
+}
+
+/* Contact image styles end here ---------------------- */
+
+/* Form on Contact page */
+form {
+    width: 70%;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+
+.form-background {
+    background-color: #cccccc;
+    background-image: linear-gradient(#a0bcf0, #f4f4f4);
+
+}
+
+/* Back to top arrow icon */
+.arrow-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Footer styling */
+footer {
+    color: black;
+    text-align: center;
+}
+
+.footer-div {
+    width: 95%;
+    margin: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #958383;
+}
+
+
+
+
+
+
+/* our body class container 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    animation: changeBackgroundColor 7s infinite;
+}
+
+/* page color changing effect 
+@keyframes changeBackgroundColor {
+    0% {
+        background-color: lightgray;
+    }
+    50% {
+        background-color: white;
+    }
+}
+
+/* main heading on page 
+header {
+    background: grey;
+    border: solid;
+}
+
+header .row {
+    margin-top: 70px;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* properties for company logo 
+.logo {
+    float: left;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 60%;
+}
+*/
+/* start of navigation bar properties
+=====================================
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+nav {
+    float: right;
+    text-align: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 20px;
+    position: relative;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #b10103;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+*/
+/* end of navigation bar properties
+===================================
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+*/ 
+
+/* 
+span {
+    margin: 5%;
+}
+
+h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #FFB6C1;
+    text-align: center;
+}
+
+on homepage
+article {
+    border: solid;
+    background-color: grey;
+}
+
+/* css for image block with quote 
+.imageQuote {
+    position: relative;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+}
+*/
+/* css for image block text 
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+}
+
+th, td {
+    background-color: #65007B;
+}
+
+img {
+    padding: 1em;
+    transition: transform 0.25s ease;
+}
+
+img:hover {
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
+}
+
+.fa {
+    padding: 5px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+*/
+
+/*
+#mainPic {
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+}
+*/
+
